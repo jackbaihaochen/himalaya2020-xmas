@@ -395,6 +395,7 @@
     </script>
 
     <script>
+      // 这部分直接原生Html写就行；回头把代码复制过去也可以
       async function autoCreateAwardList(parent_element) {
         var promise = await fetch("./assets/data/xmas-selected-ugc-test.csv");
         var data = await promise.text();
