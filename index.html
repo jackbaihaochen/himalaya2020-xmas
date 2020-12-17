@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/fullpage.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/f1cd4.css" />
+    <link rel="stylesheet" href="./assets/css/default.css" />
+    <!-- js -->
     <script src="./assets/js/fullpage.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
     <script
@@ -16,14 +20,14 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-
-    <link rel="stylesheet" href="./assets/css/default.css" />
     <title>himalayaサンタのX'mas</title>
   </head>
   <body>
     <!-- navi bar -->
     <nav class="navbar navbar-expand-lg navbar-light" id="navi">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="https://www.himalaya.com/jp" target="_blank"
+        ><i class="cat-icon cat-icon-Himalaya logo _uPU"></i
+      ></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -38,15 +42,44 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
+            <a
+              class="nav-link"
+              href="javascript:void(0);"
+              onclick="rollingBackToTop(1);"
+              >トップ <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a
+              class="nav-link"
+              href="javascript:void(0);"
+              onclick="rollingBackToTop(2);"
+              >感謝の気持ち</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a
+              class="nav-link"
+              href="javascript:void(0);"
+              onclick="rollingBackToTop(3);"
+              >受賞者</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="javascript:void(0);"
+              onclick="rollingBackToTop(4);"
+              >プレゼント</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="javascript:void(0);"
+              onclick="rollingBackToTop(5);"
+              >全部のキャスターたち</a
+            >
           </li>
           <li class="nav-item dropdown">
             <a
@@ -152,67 +185,8 @@
         data-anchor="page4"
         style="background-color: grey"
       ></div>
-      <!-- section-5 -->
-      <div class="section" data-anchor="page5" style="background-color: grey">
-        <div class="container-fluid" style="background-color: white">
-          <div class="row justify-content-center mb-5">
-            <img
-              src="./assets/img/p5-header.png"
-              alt="p5-header"
-              style="display: inline-block"
-            />
-            <h3 class="align-middle" style="display: inline-block">
-              ありがとうギフトの受け取り方 ＆ その他特典
-            </h3>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <p>
-              プレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入ります
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- section-6 -->
-      <div class="section" data-anchor="page6">
-        <div class="container-fluid" style="background-color: white">
-          <div class="row justify-content-center mb-5">
-            <img
-              src="./assets/img/p5-header.png"
-              alt="p5-header"
-              style="display: inline-block"
-            />
-            <h3 class="align-middle" style="display: inline-block">
-              さらに最大500名様にも「ありがとう」をお届け。
-            </h3>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <p>
-              プレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入ります
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- section-7 -->
-      <div class="section" data-anchor="page7">
-        <div class="container-fluid" style="background-color: white">
-          <div class="row justify-content-center mb-5">
-            <h3>注意事項</h3>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <p>
-              プレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入りますプレゼントの受け取り方が入ります
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- section-8 all other ugcs-->
-      <div class="section" data-anchor="page8" id="page8_all_ugc">
+      <!-- section-5 all other ugcs-->
+      <div class="section" data-anchor="page5" id="page5_all_ugc">
         <div class="container-fluid">
           <div class="row justify-content-center mb-5">
             <h3>全部のUGC</h3>
@@ -246,17 +220,7 @@
       //滑屏效果
       new fullpage("#fullpage", {
         // menu
-        anchors: [
-          "page1",
-          "page2",
-          "page3",
-          "page4",
-          "page5",
-          "page6",
-          "page7",
-          "page8",
-          "page9",
-        ],
+        anchors: ["page1", "page2", "page3", "page4", "page5", "page6"],
         autoScrolling: true,
         scrollBar: true,
         verticalCentered: true,
@@ -276,6 +240,17 @@
     </script>
 
     <script>
+      function rollingBackToTop(page_num) {
+        $("html,body").animate(
+          { scrollTop: $(`[data-anchor='page${page_num}']`).offset().top },
+          "slow"
+        );
+        $("[class='nav-item active']").attr("class", "nav-item");
+        $(`[onclick='rollingBackToTop(${page_num});']`)
+          .parent()
+          .attr("class", "nav-item active");
+      }
+
       // 这部分直接原生Html写就行；回头把代码复制过去也可以
       async function autoCreateAwardList(parent_element) {
         var promise = await fetch("./assets/data/xmas-selected-ugc-test.csv");
@@ -374,14 +349,14 @@
         var accordion = document.getElementById("accordionExample");
         var pages = document.getElementsByClassName("section");
         var caster_list = document.getElementById("caster-list");
-        var page8 = document.getElementById("page8_all_ugc");
+        var page5 = document.getElementById("page5_all_ugc");
         var all_ugc = document.getElementById("all_ugc");
         autoCreateAwardList(caster_list);
         rollingUGCDisplay(all_ugc);
         setTimeout(setHeight(), 1000);
         function setHeight() {
           var responsive_height =
-            (parseInt(page8.style.height.slice(0, -2)) - 300).toString() + "px";
+            (parseInt(page5.style.height.slice(0, -2)) - 300).toString() + "px";
           console.log(responsive_height);
           all_ugc.style.height = responsive_height;
         }
