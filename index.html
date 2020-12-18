@@ -180,7 +180,7 @@
           <img src="./assets/img/10.png" alt="p4-header" id="p4-header" />
         </div>
         <div class="container" id="p4-text-background">
-          <div class="row justify-content-center" id="p4-text">
+          <div class="row justify-content-center mb-5" id="p4-text">
             <p class="col-12 pb-1">
               当ページでご紹介した50名に、特別なプレゼントを贈呈します。のちほど、個別にお送りするスペシャル感謝メールに記載の専用応募フォームから、ご申請ください。
             </p>
@@ -250,7 +250,7 @@
         autoScrolling: true,
         scrollBar: true,
         verticalCentered: true,
-        paddingTop: "56px",
+        paddingTop: "70px",
 
         // stop auto scroll when encountering long pages
         afterLoad: function (origin, destination, direction) {
@@ -315,7 +315,7 @@
                 <div class="col-6">
                   <div class="caster-header">
                     <a
-                      href="https://www.himalaya.com/jp-ghost-storyline-rakugo-podcasts/${aid}"
+                      href="https://www.himalaya.com/jp-ghost-storyline-rakugo-podcasts/${aid}" target="_blank"
                       ><img
                         src="${pic_url}"
                         alt="test"
@@ -346,7 +346,7 @@
           var aid = ugc_info[0];
           str =
             str +
-            `<li><a href="https://www.himalaya.com/jp-ghost-storyline-rakugo-podcasts/${aid}">${title}</a></li>`;
+            `<li><a href="https://www.himalaya.com/jp-ghost-storyline-rakugo-podcasts/${aid}" target="_blank">${title}</a></li>`;
         }
         str = str + `</ul>`;
         parent_element.innerHTML = str;
@@ -377,15 +377,9 @@
         var caster_list = document.getElementById("caster-list");
         var page5 = document.getElementById("page5_all_ugc");
         var all_ugc = document.getElementById("all_ugc");
+        var all_ugc_container = document.getElementById("all_ugc_container");
         autoCreateAwardList(caster_list);
         rollingUGCDisplay(all_ugc);
-        setTimeout(setHeight(), 1000);
-        function setHeight() {
-          var responsive_height =
-            (parseInt(page5.style.height.slice(0, -2)) - 300).toString() + "px";
-          console.log(responsive_height);
-          all_ugc.style.height = responsive_height;
-        }
       };
     </script>
   </body>
