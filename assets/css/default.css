@@ -19,25 +19,24 @@ body {
 #p1-background {
   background-image: url("../img/19.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 85%;;
   background-position: center;
 }
 
-#p2-text {
-  margin-left: 20%;
-  margin-right: 20%;
-}
 
 #p2-text-background {
-  background-image: url("../img/1.jpg");
+  background-image: url(../img/1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  padding: 15%;
+  padding: 15px;
+  height: 720px;
 }
 
 #p2-text {
-  font-size: 2vh;
+  font-size: 20px;
+  width: 680px;
+  margin: 116px auto;
 }
 
 #p3-cover {
@@ -76,35 +75,36 @@ body {
 }
 
 #p4-header {
-  margin-left: 20%;
-  margin-right: 20%;
+  /* margin-left: 20%;
+  margin-right: 20%; */
   width: 50%;
 }
 
 #p4-text-background {
-  background-image: url("../img/4.jpg");
-  background-size: contain;
+  background-image: url(../img/4.jpg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 15%;
-  padding-top: 10%;
+  height: 736px;
+  padding: 60px 140px;
+
 }
 
 #p4-text {
-  margin-left: 20%;
-  margin-right: 20%;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 20px;
   color: #e5e5e5;
 }
+.p4-item {
+  padding: 30px 26px;
+}
 
 #p4-cover {
   background-color: rgba(255, 255, 255, 0.377);
   border-radius: 10px;
-  margin-left: 10%;
-  margin-right: 10%;
+
   padding-bottom: 10px;
   color: white;
   font-weight: bold;
@@ -123,13 +123,11 @@ body {
 }
 
 #all_ugc_container {
-  background-image: url("../img/5.jpg");
+  background-image: url(../img/5.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
-  padding-top: 40px;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding: 40px 0px;
 }
 
 #all_ugc {
@@ -162,4 +160,11 @@ body {
 .active a {
   border-bottom: lightblue 5px solid;
   border-radius: 5px;
+}
+
+
+.container {
+  width: 940px;
+  background-color: #1ce51966;
+  /* 这个背景色最后删掉。仅用于参考宽度 */
 }
