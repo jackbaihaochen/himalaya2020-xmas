@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@himalaya" />
+    <meta name="twitter:title" content="himalayaサンタのX'mas" />
+    <meta
+      name="twitter:description"
+      content="当ページでご紹介した50名に、特別なプレゼントを贈呈します。"
+    />
+    <!-- image need resize -->
+    <meta
+      name="twitter:image"
+      content="https://pub.kikihodai.com/event/2020xmas-test/assets/img/19.png"
+    />
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/fullpage.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -24,7 +37,7 @@
   </head>
   <body>
     <!-- navi bar -->
-    <nav class="navbar navbar-expand-lg navbar-light" id="navi">
+    <nav class="navbar navbar-expand-lg navbar-light navi" id="navi">
       <a class="navbar-brand" href="https://www.himalaya.com/jp" target="_blank"
         ><i class="cat-icon cat-icon-Himalaya logo _uPU"></i
       ></a>
@@ -39,115 +52,104 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a
-              class="nav-link"
-              href="javascript:void(0);"
-              onclick="rollingBackToTop(1);"
-              >トップ <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="javascript:void(0);"
-              onclick="rollingBackToTop(2);"
-              >感謝の気持ち</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="javascript:void(0);"
-              onclick="rollingBackToTop(3);"
-              >受賞者</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="javascript:void(0);"
-              onclick="rollingBackToTop(4);"
-              >プレゼント</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="javascript:void(0);"
-              onclick="rollingBackToTop(5);"
-              >全部のキャスターたち</a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown link
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
+      <div
+        class="collapse navbar-collapse row justify-content-between"
+        id="navbarNavDropdown"
+      >
+        <div class="col-10">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="javascript:void(0);"
+                onclick="rollingBackToTop(1);"
+                >トップ <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0);"
+                onclick="rollingBackToTop(2);"
+                >感謝の気持ち</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0);"
+                onclick="rollingBackToTop(3);"
+                >受賞者</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0);"
+                onclick="rollingBackToTop(4);"
+                >プレゼント</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0);"
+                onclick="rollingBackToTop(5);"
+                >全部のキャスターたち</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <a
+            class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?button_hashtag=himalaya&text=himalaya%20Christmas"
+            data-size="large"
+          >
+            Tweet</a
+          >
+        </div>
+
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </div>
     </nav>
 
     <div id="fullpage">
       <!-- section-1 header-->
       <div class="section" data-anchor="page1" id="p1-background">
-
-        <div class="container" style="height: 745px;margin-top: 130px;">
-        </div>
-        <!-- <div id="p1-bg-img1-cover"></div>
-        <div class="container-fluid">
-          <div class="row mb-5">
-            <h1 class="col-12 font-weight-bolder text-light">
-              himalayaからの、贈りもの。
-            </h1>
-          </div>
-          <div class="row text-light">
-            <h3 class="col-12 pb-3">2020</h3>
-            <h3 class="col-12 pb-3">年末感謝祭</h3>
-            <h3 class="col-12 pb-3">himalayaサンタのクリスマス</h3>
-          </div>
-        </div> -->
+        <div class="container" style="height: 600px"></div>
       </div>
       <!-- section-2 welcome-->
       <div class="section" data-anchor="page2">
         <div class="container" id="p2-text-background">
-          <div class="row justify-content-center text-center" id="p2-text">
-            <p class="col-12 pb-1">
-              himalayaキャスターのみなさん、今日も音声配信おつかされまです。
+          <div class="row justify-content-center" id="p2-text">
+            <p class="col-12 pb-4">
+              <span style="color: red">himalaya</span
+              >キャスターのみなさん、今日も音声配信おつかされまです。
             </p>
-            <p class="col-12 pb-1">
+            <p class="col-12 pb-4">
               新型コロナウイルスで世界が一変した2020年もまもなく終わります。
               今年は、himalaya含め音声配信の分野にとっては、
               まさに“大ブレイク前夜”的な1年となりました。
             </p>
-            <p class="col-12 pb-1">
+            <p class="col-12 pb-4">
               その支えとなったのが、キャスターのみなさんの存在です。
             </p>
-            <p class="col-12 pb-1">
-              そこで、みなさんの1年間の活動に敬意を表し、
-              「今年himalayaに爪痕を残した50名のキャスター」を
+            <p class="col-12 pb-4">
+              そこで、みなさんの1年間の活動に敬意を表し、<br />
+              「今年<span style="color: red">himalaya</span
+              >に爪痕を残した50名のキャスター」を<br />
               勝手に選出して勝手に感謝の気持ちをお伝えすることにしました。
             </p>
-            <p class="col-12" style="margin-bottom: 0">
-              あらためて、1年間ありがとうございました。
-            </p>
-            <p class="col-12">
-              2021年も、himalayaをどうぞよろしくお願いいたします。
+            <p class="col-12 pb-4">
+              あらためて、1年間ありがとうございました。<br />2021年も、<span
+                style="color: red"
+                >himalaya</span
+              >をどうぞよろしくお願いいたします。
             </p>
           </div>
         </div>
@@ -183,31 +185,34 @@
           <img src="./assets/img/10.png" alt="p4-header" id="p4-header" />
         </div>
         <div class="container" id="p4-text-background">
+          <div class="row justify-content-center mb-3">
+            <img src="./assets/img/temporary.png" alt="p4-content-head" />
+          </div>
           <div class="row justify-content-center mb-5" id="p4-text">
-            <p class="col-8 pb-1 p4-title">
-              当ページでご紹介した50名に、特別なプレゼントを贈呈します。のちほど、個別にお送りするスペシャル感謝メールに記載の専用応募フォームから、ご申請ください。
+            <p class="col-11 pb-1">
+              当ページでご紹介した50名に、特別なプレゼントを贈呈します。<br />のちほど、個別にお送りするスペシャル感謝メールに記載の専用応募フォームから、ご申請ください。<br />
               プレゼントは、Aグループから1つ、Bグループから1つ、計2つお選びいただけます。
             </p>
           </div>
           <div class="row" id="p4-cover">
-              <div class="col p4-item" id="p4-group-a">
-                <p>Group A</p>
-                <br />
-                <ul>
-                  <li>すき焼き用A5ランク黒毛和牛</li>
-                  <li>ズワイガニむき身セット</li>
-                  <li>天然松茸セット</li>
-                  <li>高級フルーツ詰め合わせ</li>
-                </ul>
-              </div>
-              <div class="col p4-item" id="p4-group-b">
-                <p>Group B</p>
-                <br />
-                <ul>
-                  <li>ビール24缶セット</li>
-                  <li>日本酒飲み比べセット</li>
-                  <li>100%フルーツジュース詰め合わせ</li>
-                </ul>
+            <div class="col p4-item" id="p4-group-a">
+              <p>Group A</p>
+              <br />
+              <ul>
+                <li>すき焼き用A5ランク黒毛和牛</li>
+                <li>ズワイガニむき身セット</li>
+                <li>天然松茸セット</li>
+                <li>高級フルーツ詰め合わせ</li>
+              </ul>
+            </div>
+            <div class="col p4-item" id="p4-group-b">
+              <p>Group B</p>
+              <br />
+              <ul>
+                <li>ビール24缶セット</li>
+                <li>日本酒飲み比べセット</li>
+                <li>100%フルーツジュース詰め合わせ</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -224,17 +229,65 @@
       <!-- section-9 -->
       <div class="section fp-auto-height" data-anchor="page9">
         <footer id="footer">
-          <div class="container">
+          <div class="container-fluid" style="width: 90%">
             <div class="row">
-              <div class="col-6 col-md-4 copy-rights">
+              <div
+                class="col-md-3 col-md-pull-9 copy-rights footer-vertical-center"
+              >
                 2020 © Copyrights himalaya.Inc.
               </div>
-              <div class="col-6 col-md-4">
-                <a href="https://jp.himalaya.com/company/">会社概要</a>
+              <div class="col-md-6 footer-vertical-center">
+                <nav
+                  class="text-center"
+                  id="footer-navigation"
+                  role="navigation"
+                >
+                  <ul>
+                    <li>
+                      <a href="https://jp.himalaya.com/company/">会社概要</a>
+                    </li>
+                    <li>
+                      <a href="https://jp.himalaya.com/legal/"
+                        >特定商取引法に基づく表示</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://jp.himalaya.com/privacy/"
+                        >プライバシーポリシー</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://jp.himalaya.com/about/">運営者情報</a>
+                    </li>
+                    <li>
+                      <a href="https://jp.himalaya.com/contact/"
+                        >お問い合わせ</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <!-- <ul>
+                  <li>
+                    <a href="https://jp.himalaya.com/company/" target="_blank"
+                      >会社概要</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://jp.himalaya.com/legal/" target="_blank"
+                      >特定商取引法に基づく表示</a
+                    >
+                  </li>
+                </ul> -->
               </div>
-              <div class="col-6 col-md-4">
-                <a href="https://twitter.com/himalaya_jp"
-                  ><img src="./assets/img/twitter_hover_pc.png" alt="twitter"
+              <div class="col-md-2 col-md-push-9 footer-vertical-center">
+                <a href="https://twitter.com/himalaya_jp" target="_blank"
+                  ><img
+                    src="./assets/img/twitter_hover_pc.png"
+                    alt="twitter"
+                    width="70%"
+                /></a>
+                <a href="https://www.instagram.com/himalaya_jp/" target="_blank"
+                  ><img src="./assets/img/INS.png" alt="instagram" width="70%"
                 /></a>
               </div>
             </div>
@@ -251,7 +304,7 @@
         autoScrolling: true,
         scrollBar: true,
         verticalCentered: true,
-        paddingTop: "70px",
+        paddingTop: "60px",
 
         // stop auto scroll when encountering long pages
         afterLoad: function (origin, destination, direction) {

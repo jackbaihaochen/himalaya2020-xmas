@@ -9,7 +9,7 @@ body {
   background-size: cover;
 }
 
-#navi {
+.navi {
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -19,15 +19,14 @@ body {
 #p1-background {
   background-image: url("../img/19.png");
   background-repeat: no-repeat;
-  background-size: 85%;;
+  background-size: 85%;
   background-position: center;
 }
-
 
 #p2-text-background {
   background-image: url(../img/1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding: 15px;
   height: 720px;
@@ -36,7 +35,9 @@ body {
 #p2-text {
   font-size: 20px;
   width: 680px;
-  margin: 116px auto;
+  margin: 130px auto;
+  color: #293d30;
+  font-weight: bold;
 }
 
 #p3-cover {
@@ -87,7 +88,6 @@ body {
   background-repeat: no-repeat;
   height: 736px;
   padding: 60px 140px;
-
 }
 
 #p4-text {
@@ -136,6 +136,7 @@ body {
   text-overflow: clip;
   white-space: nowrap;
   height: 400px;
+  margin-top: 25px;
 }
 
 #all_ugc li {
@@ -157,14 +158,35 @@ body {
   color: red;
 }
 
+.footer-vertical-center {
+  margin: auto;
+}
+
+#footer ul {
+  display: inline-block;
+  line-height: 0;
+  color: #99a9b5;
+}
+
+#footer li {
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+  padding: 0 20px;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: #0eacb5;
+}
+
 .active a {
   border-bottom: lightblue 5px solid;
   border-radius: 5px;
 }
 
-
 .container {
   width: 940px;
-  background-color: #1ce51966;
+  /* background-color: #1ce51966; */
   /* 这个背景色最后删掉。仅用于参考宽度 */
 }
