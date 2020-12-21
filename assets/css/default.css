@@ -9,11 +9,21 @@ body {
   background-size: cover;
 }
 
+.sp-head {
+  display: none;
+}
+
 .navi {
   z-index: 999;
   position: fixed;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.p1-container {
+  height: 600px;
+  margin-top: 110px;
+
 }
 
 #p1-background {
@@ -26,10 +36,11 @@ body {
 #p2-text-background {
   background-image: url(../img/1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 940px;
   background-position: center;
   padding: 15px;
   height: 720px;
+  border-radius: 15px;
 }
 
 #p2-text {
@@ -49,10 +60,14 @@ body {
   margin-left: 20%;
   margin-right: 20%;
   width: 50%;
+  margin-bottom: 15px;
 }
 
 .department-title {
   text-align: center;
+  text-align: center;
+  font-size: 35px;
+  padding: 20px;
 }
 
 .caster-header {
@@ -64,8 +79,10 @@ body {
   flex-basis: 20%;
 }
 
+
 .caster-name {
   text-align: center;
+  margin: 15px auto;
 }
 
 .caster-img {
@@ -88,6 +105,7 @@ body {
   background-repeat: no-repeat;
   height: 736px;
   padding: 60px 140px;
+  border-radius: 15px;
 }
 
 #p4-text {
@@ -97,6 +115,7 @@ body {
   line-height: 20px;
   color: #e5e5e5;
 }
+
 .p4-item {
   padding: 30px 26px;
 }
@@ -110,16 +129,24 @@ body {
   font-weight: bold;
 }
 
+.p4-summary {
+  line-height: 30px;
+}
+
 #p4-group-a li::before {
-  content: "◆"; /* Insert content that looks like bullets */
+  content: "◆";
+  /* Insert content that looks like bullets */
   padding-right: 8px;
-  color: white; /* Or a color you prefer */
+  color: white;
+  /* Or a color you prefer */
 }
 
 #p4-group-b li::before {
-  content: "◇"; /* Insert content that looks like bullets */
+  content: "◇";
+  /* Insert content that looks like bullets */
   padding-right: 8px;
-  color: white; /* Or a color you prefer */
+  color: white;
+  /* Or a color you prefer */
 }
 
 #all_ugc_container {
@@ -128,6 +155,7 @@ body {
   background-size: cover;
   background-position: top center;
   padding: 40px 0px;
+  border-radius: 15px;
 }
 
 #all_ugc {
@@ -137,6 +165,7 @@ body {
   white-space: nowrap;
   height: 400px;
   margin-top: 25px;
+  color: white;
 }
 
 #all_ugc li {
@@ -146,6 +175,7 @@ body {
   list-style: none;
   display: block;
   padding-bottom: 20px;
+  margin: 15px auto;
 }
 
 #footer {
@@ -189,4 +219,136 @@ body {
   width: 940px;
   /* background-color: #1ce51966; */
   /* 这个背景色最后删掉。仅用于参考宽度 */
+}
+
+#caster-list {
+
+  background-color: #ca3133;
+  border-radius: 20px;
+  color: white;
+
+}
+
+.caster-img:hover {
+  border: 4px solid red;
+}
+
+.list-creator {}
+
+.list-creator:hover {
+  font-size: 26px;
+  background: #ca3133;
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  #p1-background {
+    background: none;
+  }
+
+  .sp-head {
+    display: block;
+  }
+
+  .p1-container {
+    margin-top: 0;
+  }
+
+  .container {
+
+    width: fit-content;
+  }
+
+  #p2-text-background {
+    background: none;
+  }
+
+  #caster-list {
+    background-color: #b73035;
+    margin: auto 15px;
+  }
+
+  #p2-text {
+    width: 100%;
+  }
+
+
+  #p2-text {
+
+    background: #af0808;
+    color: white;
+    padding: 15px 0;
+    border-radius: 15px;
+  }
+
+  #p3-cover {
+
+    margin-top: 210px;
+  }
+
+  #p3-header {
+
+    width: 100%;
+    margin: unset;
+    padding: 25px;
+  }
+
+  #p4-header {
+
+    width: 70%;
+    margin: 20px;
+  }
+
+  #p4-text-background {
+    padding: 15px;
+    margin: auto 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  #p4-cover {
+    border-radius: unset;
+    background: darkgreen;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  #all_ugc_container {
+
+    width: calc(100% - 30px);
+    border-radius: 15px;
+    margin: auto 15px;
+  }
+
+  #all_ugc {
+
+    width: 100%;
+    padding: auto 15px;
+  }
+
+  .all-creator-roll {
+    overflow: hidden;
+  }
+
+  .copy-rights {
+    text-align: center;
+  }
+
+  .footer-vertical-center {
+    text-align: center;
+
+  }
+
+  #footer-navigation {
+    margin: 15px auto;
+  }
+
 }
