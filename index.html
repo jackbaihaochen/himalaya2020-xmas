@@ -766,8 +766,8 @@
           <div class="container" id="all_ugc"></div>
         </div>
       </div>
-      <!-- section-9 -->
-      <div class="section fp-auto-height" data-anchor="page9">
+      <!-- section-6 footer-->
+      <div class="section fp-auto-height" data-anchor="page6">
         <footer id="footer">
           <div class="container-fluid" style="width: 90%">
             <div class="row">
@@ -849,7 +849,7 @@
       //滑屏效果
       new fullpage("#fullpage", {
         // menu
-        anchors: ["page1", "page2", "page3", "page4", "page5", "page6"],
+        // anchors: ["page1", "page2", "page3", "page4", "page5", "page6"],
         autoScrolling: true,
         scrollBar: true,
         verticalCentered: true,
@@ -860,7 +860,7 @@
           var loadedSection = this;
 
           //stops when entering page3 from page2
-          if (origin.anchor == "page1" && direction == "down") {
+          if (origin.index == 0 && direction == "down") {
             fullpage_api.setAutoScrolling(false);
             fullpage_api.destroy();
           }
