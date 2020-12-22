@@ -91,6 +91,7 @@ body {
   width: fit-content;
   position: relative;
 }
+
 .department-comment::before {
   content: "";
   position: absolute;
@@ -369,7 +370,7 @@ body {
   }
 
   .caster-name {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   #p4-header {
@@ -392,9 +393,15 @@ body {
   #p4-cover {
     border-radius: unset;
     background: darkgreen;
+    font-size: 15px;
+    margin-bottom: unset;
+  }
+
+  #p4-supplement {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    font-size: 15px;
+    background: darkgreen;
+    padding-bottom: 20px;
   }
 
   #p5-text {
@@ -419,6 +426,10 @@ body {
 
   .all-creator-roll {
     overflow: hidden;
+  }
+
+  #page5_all_ugc {
+    margin-top: 50px;
   }
 
   .copy-rights {
