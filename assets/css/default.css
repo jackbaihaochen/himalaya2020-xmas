@@ -8,6 +8,7 @@ body {
   background-image: url("../img/overall-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #e52319;
 }
 
 .sp-head {
@@ -285,6 +286,23 @@ body {
   text-decoration: none;
   padding: 0 15px;
 }
+.download {
+  text-align: center;
+}
+a.download-app {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 65px;
+  margin: auto auto 50px auto;
+}
+
+a.download-app:hover {
+  background-color: #ca3133;
+  transform: scale(1.2);
+  text-decoration: none;
+}
 
 @media (max-width: 767px) {
   #nav_twitter {
@@ -299,8 +317,15 @@ body {
     background: none;
   }
 
+ 
+  @keyframes display-in
+  {
+    0%   {opacity: .5;}
+    100% {opacity: 1;}
+  }
   .sp-head {
     display: block;
+    animation:display-in 4s;
   }
 
   .p1-container {
