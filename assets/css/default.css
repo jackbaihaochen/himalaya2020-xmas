@@ -6,8 +6,8 @@
 /* 目前背景图仍需修改（底部圣诞老人加上，并且留出页脚空白，同时减小文件体积） */
 body {
   background-image: url("../img/overall-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   background-color: #e52319;
 }
 
@@ -43,6 +43,10 @@ body {
   background-repeat: no-repeat;
   background-size: 85%;
   background-position: center;
+}
+
+#p2-header {
+  display: none;
 }
 
 #p2-text-background {
@@ -230,6 +234,11 @@ body {
   margin: 15px auto;
 }
 
+#bottom-img-container {
+  margin: 0;
+  padding: 0;
+}
+
 #footer {
   background-color: #181828;
   padding: 40px 0;
@@ -295,6 +304,7 @@ body {
 }
 .download {
   text-align: center;
+  display: none;
 }
 a.download-app {
   display: inline-block;
@@ -343,6 +353,17 @@ a.download-app:hover {
 
   .container {
     width: fit-content;
+  }
+
+  #p2-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #p2-header {
+    display: block;
+    width: 20%;
   }
 
   #p2-text-background {
@@ -419,14 +440,14 @@ a.download-app:hover {
     border-top-right-radius: 15px;
   }
 
-  #p4-text {
+  .p4-text {
     font-size: 15px;
     line-height: 15px;
   }
 
   #p4-cover {
     border-radius: unset;
-    background: darkgreen;
+    background: #10502b;
     font-size: 15px;
     margin-bottom: unset;
   }
@@ -434,7 +455,7 @@ a.download-app:hover {
   #p4-supplement {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    background: darkgreen;
+    background: #10502b;
     padding-bottom: 20px;
   }
 
@@ -476,5 +497,9 @@ a.download-app:hover {
 
   #footer-navigation {
     margin: 15px auto;
+  }
+
+  .download {
+    display: block;
   }
 }
