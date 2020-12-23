@@ -19,6 +19,8 @@
   <title>himalayaサンタのX'mas - いきなり感謝祭</title>
   <meta name="description" content="himalaya年末、いきなり感謝祭。 「今年himalayaに爪痕を残した50名のキャスター」を勝手に選出して勝手に感謝の気持ちをお伝えすることにしました。">
   <meta name="keywords" content="himalaya, いきなり,キャスター,クリスマス,音声 "> 
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <link rel="bookmark" href="./assets/img/favicon.ico" type="image/x-icon"　/> 
 </head> 
 <body>
   <!-- navi bar -->
@@ -27,7 +29,7 @@
         class="cat-icon cat-icon-Himalaya logo _uPU"></i></a>
     <div id="nav_twitter_sp">
       <a class="twitter-share-button"
-        href="https://twitter.com/intent/tweet?hashtags=himalaya,himalaya感謝祭&text=himalaya%20Christmas"
+        href="https://twitter.com/intent/tweet?hashtags=himalaya感謝祭&text=himalaya%20Christmas"
         data-size="large">Tweet</a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -35,7 +37,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse row justify-content-between" id="navbarNavDropdown">
-      <div class="col-10">
+      <div class="col-8">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="javascript:void(0);" onclick="rollingBackToTop(1);">トップ <span
@@ -55,7 +57,10 @@
           </li>
         </ul>
       </div>
-      <div class="col-2" id="nav_twitter">
+      <div class="col-4" id="nav_sns">
+        <a 
+          href="https://www.himalaya.com/jp" target="_blank">
+          <img class="himalaya-button" src="./assets/img/himalaya-button.png" alt="himalaya-button"></a>
         <a class="twitter-share-button"
           href="https://twitter.com/intent/tweet?hashtags=himalaya,himalaya感謝祭&text=himalaya%20Christmas" data-size="large">
           Tweet</a>
@@ -70,7 +75,9 @@
     <div class="section" data-anchor="page1" id="p1-background">
       <div class="container p1-container">
         <img src="./assets/img/sp-head.jpg" class="sp-head" alt="sp-head" />
+        <img src="./assets/img/p1-down-arrow.png" class="p1-down-arrow" alt="p1-down-arrow" onclick="rollingBackToTop(2);">
       </div>
+      
     </div>
     <!-- section-2 welcome-->
     <div class="section" data-anchor="page2">
@@ -130,9 +137,15 @@
 
         <!-- CEOの独断と偏見部門 -->
         <p class="department-title">CEOの独断と偏見部門</p>
-        <div class="department-comment text-center">
-          <p>himalaya（Japan）CEOが、独断と偏見で、2020年のお気に入りチャンネルを5つ選出。</p>
+        <div class="container row">
+          <div class="col-3"> 
+            <img src="./assets/img/p3-comment-img.png" alt="p3-comment-img" class="p3-comment-img">
+          </div>        
+          <div class="department-comment text-center col-9">          
+            <p>himalaya（Japan）CEOが、独断と偏見で、2020年のお気に入りチャンネルを5つ選出。</p>
+          </div>
         </div>
+
         <div class="row">
           <div class="col-4 col-sm-3">
             <div class="caster-header">
@@ -231,8 +244,8 @@
 
           <div class="col-4 col-sm-3">
             <div class="caster-header">
-              <a href="https://www.himalaya.com/jp-ghost-storyline-rakugo-podcasts/2286524" target="_blank"><img
-                  src="https://cdn.himalaya.com/ca4acb8720324fe38b4d8f6be5ef890e.jpeg?x-oss-process=image/resize,w_600,h_600&amp;auth_key=4102416000-1234-0-9d9bc439a1ab8aba497cc68a0197facd"
+              <a href="https://www.himalaya.com/jp-free-talk-podcasts/2292495" target="_blank"><img
+                  src="https://cdn.himalaya.com/54f358fa82254b0ea1f048eedb87d366.jpg?x-oss-process=image/resize,w_600,h_600&auth_key=4102416000-1234-0-1f7629806dbf077a9282674420bcc204"
                   alt="caster-img" class="caster-img"></a>
             </div>
             <div class="caster-name">
@@ -807,7 +820,7 @@
       <div class="download">
         <a title="himalaya app download"
           class="download-app" href="http://himalaya.com/jp?utm_from=2020xmas&utm_campaign=2020xmas#download"
-          target="_blank">Get himalaya APP
+          target="_blank">himalayaアプリをGet
         </a>
       </div>
       <div class="container-fluid" id="bottom-img-container">
@@ -893,24 +906,25 @@
     new fullpage("#fullpage", {
       // menu
       // anchors: ["page1", "page2", "page3", "page4", "page5", "page6"],
-      autoScrolling: true,
+      autoScrolling: false,
       scrollBar: true,
       verticalCentered: true,
       paddingTop: "60px",
 
-      // stop auto scroll when encountering long pages
-      afterLoad: function (origin, destination, direction) {
-        var loadedSection = this;
+      // // stop auto scroll when encountering long pages
+      // afterLoad: function (origin, destination, direction) {
+      //   var loadedSection = this;
 
-        //stops when entering page3 from page2
-        if (origin.index == 0 && direction == "down") {
-          fullpage_api.setAutoScrolling(false);
-          fullpage_api.destroy();
-        }
-      },
+      //   //stops when entering page3 from page2
+      //   if (origin.index == 0 && direction == "down") {
+      //     fullpage_api.setAutoScrolling(false);
+      //     fullpage_api.destroy();
+      //   }
+      // },
     });
 
     $(document).ready(function () {
+      fullpage_api.destroy();
       document.body.className = "darkBg";
       $('.collectonme').hide();
       $(document).snowfall('clear');

@@ -22,10 +22,19 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+#nav_sns {
+  display: flex;
+}
+
+.himalaya-button {
+  height: 28px;
+  padding-right: 20px;
+}
+
 @media (min-width) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -43,6 +52,43 @@ body {
   background-repeat: no-repeat;
   background-size: 85%;
   background-position: center;
+}
+
+#p1-background .fp-tableCell {
+  vertical-align: inherit;
+}
+
+.p1-container {
+  /* margin-top: 0; */
+  position: relative;
+}
+
+@keyframes down-arrow {
+  0% {
+    opacity: 0.1;
+    bottom: 50px;
+  }
+  50% {
+    opacity: 0.7;
+    bottom: 40px;
+  }
+  100% {
+    opacity: 0.1;
+    bottom: 50px;
+  }
+}
+
+.p1-down-arrow {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: down-arrow 2s linear infinite;
+  width: 10%;
+}
+
+.p1-down-arrow {
+  /* display: none; */
 }
 
 #p2-header {
@@ -98,7 +144,7 @@ body {
   padding: 20px;
   margin: auto;
   margin-bottom: 20px;
-  background-color: #c3f69d;
+  background-color: white;
   border-radius: 5px;
   width: fit-content;
   position: relative;
@@ -108,7 +154,7 @@ body {
   content: "";
   position: absolute;
   border: transparent 15px solid;
-  border-right-color: #c3f69d;
+  border-right-color: white;
   height: 0;
   width: 0;
   left: -25px;
@@ -272,7 +318,7 @@ body {
 }
 
 #navi .active a {
-  border-bottom: lightblue 5px solid;
+  border-bottom: red 5px solid;
   border-radius: 5px;
 }
 
@@ -283,7 +329,7 @@ body {
 }
 
 #caster-list {
-  background-color: #ca3133;
+  background-color: #f34c4c;
   border-radius: 20px;
   color: white;
 }
@@ -308,6 +354,7 @@ body {
 }
 a.download-app {
   display: inline-block;
+  border: white 3px solid;
   background-color: red;
   color: white;
   padding: 10px 20px;
@@ -322,7 +369,7 @@ a.download-app:hover {
 }
 
 @media (max-width: 767px) {
-  #nav_twitter {
+  #nav_sns {
     display: none;
   }
 
@@ -334,21 +381,47 @@ a.download-app:hover {
     background: none;
   }
 
-  @keyframes display-in {
+  /* @keyframes display-in {
     0% {
       opacity: 0.5;
     }
     100% {
       opacity: 1;
     }
-  }
+  } */
   .sp-head {
     display: block;
-    animation: display-in 4s;
+    /* animation: display-in 4s; */
   }
 
   .p1-container {
     margin-top: 0;
+    position: relative;
+  }
+
+  @keyframes down-arrow {
+    0% {
+      opacity: 0.1;
+      bottom: -20px;
+    }
+    50% {
+      opacity: 0.7;
+      bottom: -40px;
+    }
+    100% {
+      opacity: 0.1;
+      bottom: -20px;
+    }
+  }
+
+  .p1-down-arrow {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%, -50%);
+    animation: down-arrow 2s linear infinite;
+    width: 20%;
   }
 
   .container {
@@ -371,7 +444,7 @@ a.download-app:hover {
   }
 
   #caster-list {
-    background-color: #b73035;
+    background-color: #f34c4c;
     margin: auto 15px;
   }
 
